@@ -1,0 +1,11 @@
+We start by taking the dataframe and adding a grouping for same day meetings for the child and create a column for it called VISIT_ID. 
+There are 9,543 total visits in the dataframe. When you do a count of just covisits, there are 4,091.  For IFSP Meeting there are 4891, and for IEP Meeting there are 632.  
+This equates to 50.5% of the total for IFSP Meeting, 42.9% for Co-Visits, and 6.6% for IEP Meetings.
+Next, we took the dataframe and pulled out VISIT_ID where there was only one instance of it, meaning only one visit for that child on that day. 
+This left a value of 8,421 meetings.  Of this, 3,039 were Co-Visits, 4,755 were IFSP Meeting, and 627 were IEP meetings.  
+For the total Single Covisits out of the total Co-Visits, it is 3,039/4,091, which is 74.3% of all Co-Visits.
+
+Metrics for "Single Co-Visits"
+4,091 Co-Visits in Dataset
+Number of Co-Visits w/o another meeting on the same day for child_id
+3,039 "Single Co-Visits"
